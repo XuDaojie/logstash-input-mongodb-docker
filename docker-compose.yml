@@ -1,0 +1,9 @@
+version: '3'
+services:
+
+  logstash:
+    image: "logstash:7.4.1"
+    volumes: 
+      - /Users/xdj/Workspace/Docker/Volumes/logstash/:/usr/share/logstash/pipeline/
+      # - /root/docker/volumes/logstash:/usr/share/logstash/pipeline
+      # - /var/lib/docker/volumes/logstash:/usr/share/logstash/pipeline
